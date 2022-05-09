@@ -1,0 +1,54 @@
+/**LUCKY_PENNY_COFFEE list:
+Double Espresso(2.5, 2.5, 6, 1)
+Latte(3.5, 4, 8, 0)
+Mocha(2.5, 4.25, 25, 3)
+Brewed Coffee(1.75, 2.25, 10, 7)
+Vanilla Latte(3.75, 4.0, 20, 4)
+Macchiato(2.75, 2.75, 1, 0)
+Cappuccino(3.5, 4.0, 5, 2)
+Apple Cider(3.5, 4.0, 29, 3)
+Hot Chocolate(3.0, 3.25, 6, 0)
+Steamer(3.0, 3.25, 8, 0)
+Chai Tea Latte(3.75, 4.25, 30, 6)
+Season Special(3.75, 4.25, 44, 3)
+Italian Soda(2.5, 2.75, 14, 5)
+Iced Tea(2.5, 2.5, 5, 0)
+Cold Brew(3.25, 3.75, 22, 4)
+**/
+
+CREATE TABLE Drinks (id INTEGER PRIMARY KEY, Name TEXT, SMPrice INTEGER, LGPrice INTEGER, QuantitySold INTEGER, QuantityLost INTEGER);
+
+INSERT INTO Drinks VALUES (1, "Double Espresso", 2.5,2.5,6,1);
+SELECT * FROM Drinks;
+
+INSERT INTO Drinks VALUES (2, "Latte", 3.5, 4, 8, 0);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (3, "Mocha", 2.5, 4.25, 25, 3);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (4, "Brewed Coffee", 1.75, 2.25, 10, 7);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (5, "Vanilla Latte", 3.75, 4.0, 20, 4);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (6, "Macchiato", 2.75, 2.75, 1, 0);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (7, "Cappuccino", 3.5, 4.0, 5, 2);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (8, "Apple Cider", 3.5, 4.0, 29, 3);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (9, "Hot Chocolate", 3.0, 3.25, 6, 0);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (10, "Steamer", 3.0, 3.25, 8, 0);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (11, "Chai Tea Latte", 3.75, 4.25, 30, 6);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (12, "Season Special", 3.75, 4.25, 44, 3);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (13, "Italian Soda", 2.5, 2.75, 14, 5);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (14, "Iced Tea", 2.5, 2.5, 5, 0);
+SELECT * FROM Drinks;
+INSERT INTO Drinks VALUES (15, "Cold Brew", 3.25, 3.75, 22, 4);
+SELECT * FROM Drinks;
+SELECT MIN(SMPrice) FROM Drinks;
+SELECT * FROM Drinks ORDER BY SMPrice;
+SELECT MIN(SMPrice) FROM Drinks;
